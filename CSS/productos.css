@@ -1,0 +1,274 @@
+.contenido h2, h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.btnAgregar
+{
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #008F39;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button span { font-size: 20px; }
+
+img { margin: 0 auto; width: 25px; padding: 2px; }
+
+.buscador{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 20px; 
+}
+
+#buscador, #cancelar {
+    background-color: #0131b2;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#cancelar { background-color: #a22; }
+
+.inputTxt {
+    width: 700px;
+    height: 40px;
+    padding: 7px;
+    border: none;
+    border-radius: 12px;
+}
+
+table {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    border-collapse: collapse;
+    color: #1c1c1c;
+}
+
+td,th {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+thead {
+    background-color: #ff944e;
+    border-bottom: solid 3px #000;
+    color: #1c1c1c;
+}
+
+.btnEditar, .btnEliminar, .boton-modal label, .btnFactura {
+    text-decoration: none;
+    color: #fff;
+    background-color: #008F39;
+    padding: 7px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnEliminar { background-color: #a22; } .boton-modal label { background-color: #a22;} .btnFactura { background-color: #0131b2; }
+
+.reportes{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    padding: 0px 25px; 
+    margin-right: 15px;
+}
+
+#titulo{ display: flex; justify-content: center; padding: 8px; }
+
+#PDF {
+    text-decoration: none;
+    background-color: #a22;
+    color: #ffffff;
+    padding: 8px;
+    left: 500px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#pdf_icono, #excel_icono_2{ display: flex; justify-content: center; align-items: center; width: 50px; }  #excel_icono_2 { width: 45px; }
+
+#EXCEL {
+    text-decoration: none;
+    background-color: #008F39;
+    color: #ffffff;
+    padding: 8px;
+    left: 500px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn-modal{ display: none; background-color: #0131b2;;}
+
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144,148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal { display: flex; }
+
+.content-modal {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.content-modal h2 { margin-bottom: 15px; color: #000; }
+
+.content-modal .btn-cerrar {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #0295f7;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.content-modal_2 .btn-cerrar label, #btn-registrar {
+    padding: 7px 10px;
+    background-color: #a22;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-cerrar { display: flex; gap: 20px; } #btn-registrar { background-color: #008F39; }
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+.boton-modal_2 label {
+    background-color: #008F39;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn-modal_2 {
+    display: none;
+}
+
+.container-modal_2 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144,148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal_2:checked ~ .container-modal_2 { display: flex; }
+
+.content-modal_2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+#txtCodigo, #txtNombre, #txtContacto, #txtTelefono, #txtDireccion, #txtCedula, #txtPrecio, #txtTotal, #txtCantidad { width: 400px; height: 30px; padding: 2px 8px; border: none; border-radius: 6px; outline: none; }
+
+select { border: none; border-radius: 6px; outline: none; }
+
+h3 { text-align: center; font-size: 24px;}
+
+.content-modal_2 h2 { margin-bottom: 15px; color: #000; }
+
+.content-modal_2 .btn-cerrar {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cerrar-modal_2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+.correcto {
+	text-align: center;   
+	width: 32%;
+    position: relative;
+    transform: translate(100%, -0%);
+	padding: 12px;
+	background-color: #2d572c;
+	color: #fff;
+    border-radius: 12px;
+}
+.error {
+	text-align: center;   
+	width: 32%;
+    position: relative;
+    transform: translate(100%, -0%);
+	padding: 12px;
+	background-color: #a22;
+	color: #fff;
+    border-radius: 12px;
+    
+}
+
+.oscuro {
+    border: none;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+body.modo-oscuro { 
+    background-color: #222222; 
+    color: #000; 
+  } 
+
+table.modo-oscuro { color: #fff; } thead.modo-oscuro { color: #fff;  border-bottom: solid 3px #fff;}
+
+p.modo-oscuro { color: #fff; }
+
+h1.modo-oscuro { color: #fff; }
+
+#titulo.modo-oscuro { color: #fff; }
+
+#modo_oscuro.modo-oscuro { background-color: #f5f5f5; color: #000;}
+
+.login-form.modo-oscuro { background: #000; color: #fff; }
+
+
+
+
